@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-export function App() {
+export function TwitterFollowCard() {
   return (
     <article className='tw-followCard'>
       <header className='tw-followCard-header'>
@@ -19,4 +19,3 @@ export function App() {
     </article>
   )
 }
-
