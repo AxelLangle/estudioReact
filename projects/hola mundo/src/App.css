@@ -11,11 +11,19 @@ body {
   color: #fff;
 }
 
+.App {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .tw-followCard {
   display: flex;
   align-items: center;
   color: #fff;
   font-size: .8rem;
+  justify-content: space-between;
 }
 
 .tw-followCard-header{
