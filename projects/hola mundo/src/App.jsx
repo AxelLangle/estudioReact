@@ -9,7 +9,8 @@ export function App() {
     <section className="App">
       <TwitterFollowCard socialUserName="AxelFernandoLangleCamacho" userName="AxelLangle" userJob="Desarrollador Web" />
       <TwitterFollowCard socialUserName="midudev" userName="MiduDev" userJob="Desarrollador Web" />
-      <TwitterFollowCard socialUserName="Juanito" userName="Juanito" userJob="Desarrollador Web" />
+      <TwitterFollowCard socialUserName="JuanSGuarnizo" userName="Juaniquilador" userJob="Streamer" />
+      <TwitterFollowCard socialUserName="BillGates" userName="Bill Gates" userJob="Filantropo" />
     </section>
   )
 }
