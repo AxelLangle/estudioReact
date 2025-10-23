@@ -3,11 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-export function TwitterFollowCard({ socialUserName, userName, userJob }) {
+export function TwitterFollowCard({ children, socialUserName, userName, userJob }) {
     const [isFollowing, setIsFollowing] = useState(false)
 
-    const handleToggle = () => setIsFollowing(prev => !prev)
+    const handleClick = () => setIsFollowing(!isFollowing)
     console.log(isFollowing)
+
     return (
         <article className='tw-followCard'>
             <header className='tw-followCard-header'>
@@ -17,19 +18,21 @@ export function TwitterFollowCard({ socialUserName, userName, userJob }) {
                     alt={`El avatar de ${userName}`}
                 />
                 <div className='info-user'>
+                    {children}
                     <strong className='name-user'>@{userName}</strong>
                     <span className='job-user'>{userJob}</span>
+                    
                 </div>
             </header>
 
             <aside>
                 <button
                     className='follow-button'
-                    onClick={handleToggle}
+                    onClick={handleClick}
                 >
                     {isFollowing ? 'Siguiendo' : 'Seguir'}
                 </button>
             </aside>
         </article>
-    )
+    ) 
 }
